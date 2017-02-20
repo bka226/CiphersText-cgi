@@ -1,0 +1,19 @@
+TextCiphers-cgi
+ You are to implement a simple web page to perform simple/silly ciphers 
+- Your HTML file shall:
+- use HTML forms to ask the user for some text and a cipher like: 
+  "hello CS316 class of Spring2017!" and "reverse"
+- either allow the user to type the cipher, or use a select input 
+- use the GET method and send the user input via the ACTION attribute   
+to your CGI program (see below).  The two parameter names shall be   "user_input" and "cipher_selected" - all lowercase!  This is important   for grading!
+- Your CGI program shall:
+- be written in  python - never abort due to incorrect user input. - validate cipher submitted. - shall perform the requested cipher to convert the input text to the   new text. - return the encoded text back to the user or an appropriate error
+message.
+- NOT call any external URLs from within the program. - be properly documented.
+Your HTML/CGI files should handle the following ciphers:
+dummy - this just returns the original text reverse - this returns the text in reverse order rot13 - this returns the rot13 (see web reference) encoding of text lower - this returns the text converted to all lower case upper - this returns the text converted to all upper case
+NOTE: for the last 3 "ciphers" you do not need to change non-alphabetic characters.
+NOTE: those five options (all lower case!) are the only options you should accept.  Anything else should result in an error message.  Also, if the parameter is missing, generate an error message!
+
+1. A file named "cipher.html". 2. A file named "do_cipher.cgi" 
+

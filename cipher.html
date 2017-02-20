@@ -1,0 +1,34 @@
+<!-- 
+Name: Binod Katwal 
+Date: 1/10/17
+The purpose of the project is to code simple/silly Ciphers by using Python& cgi
+File: do_ciphers.cgi
+File: Cipher.html
+-->
+<!DOCTYPE html>
+<body style="background-color: 	#33FF91;">
+<h2>
+<p style= " color:blue;" >  Binod Text Ciphers  </p></h2>
+<form action="do_cipher.cgi" method="get">
+		
+	<h4 style= "color:green;" >Please enter some texts below:
+		</h4>
+        Text:
+		<input type= "user_input"  name = "user_input" >
+        <br>
+        <br>
+        cipher method:
+<select name="cipher">
+	<option value="dummy">Dummy</option>
+	<option value="reverse">Reverse</option>
+	<option value="rot13">ROT13</option>
+	<option value="lower">lower</option>
+	<option value="upper">UPPER</option>
+</select>
+
+		<br>
+		<input type="submit" value="CIPHER!" >	
+		
+</form>
+</body>
+</html>
